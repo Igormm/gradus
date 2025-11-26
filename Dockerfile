@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /build
 
 # Копирование исходного кода
-COPY gradus_enhanced.c CMakeLists.txt Makefile build.sh ./
+COPY gradus.c CMakeLists.txt Makefile build.sh ./
 COPY README_ENHANCED.md ENHANCED_FEATURES.md ./
 
 # Сборка программы
